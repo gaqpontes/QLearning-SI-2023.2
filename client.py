@@ -54,7 +54,6 @@ for episode in range(3000000000000):
         q_values[estadoAtual[0]][indiceAcao] = resultado
         estadoAtual = [estadoInt, recompensa]
     valuesTable = getQvaluesTable(q_values)
-    print(getQvaluesTable(valuesTable))
     f = open("ultimoResultado.txt", "w")
     f.write(valuesTable)
     f.close()
